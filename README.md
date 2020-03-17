@@ -21,9 +21,9 @@ And jar file with name "gmwcs.jar" will appear in "target" directory
 Running
 =======
 
-To run program you should set jvm parameter java.library.path to directory of CPLEX binaries and specify classpath like that:
+To run program you should set jvm parameter java.library.path to directory of CPLEX binaries and specify classpath like that, also execute this command when you are in the gmwcs-solver directory:
 
-    java -Xss4M -Djava.library.path=/opt/ibm/ILOG/CPLEX_Studio1263/cplex/bin/x86-64_linux/ -cp /opt/ibm/ILOG/CPLEX_Studio1263/cplex/lib/cplex.jar:gmwcs.jar ru.ifmo.ctddev.gmwcs.Main
+    java -Xss4M -Djava.library.path=/opt/ibm/ILOG/CPLEX_Studio_Community129/cplex/bin/x86-64_linux/ -cp /opt/ibm/ILOG/CPLEX_Studio_Community129/cplex/lib/cplex.jar:target/gmwcs-solver.jar ru.ifmo.ctddev.gmwcs.Main -e edges -n nodes 
 
 See more help by using flag -h.
 
