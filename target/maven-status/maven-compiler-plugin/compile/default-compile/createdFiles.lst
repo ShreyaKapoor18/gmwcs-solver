@@ -1,6 +1,6 @@
-ru/ifmo/ctddev/gmwcs/solver/BicomponentSolver.class
-ru/ifmo/ctddev/gmwcs/solver/Preprocessor.class
 ru/ifmo/ctddev/gmwcs/solver/SupportGraph.class
+ru/ifmo/ctddev/gmwcs/solver/Preprocessor.class
+ru/ifmo/ctddev/gmwcs/solver/BicomponentSolver.class
 ru/ifmo/ctddev/gmwcs/graph/Decomposition.class
 ru/ifmo/ctddev/gmwcs/graph/Blocks.class
 ru/ifmo/ctddev/gmwcs/solver/SupportGraph$MyGraph.class
@@ -23,6 +23,6 @@ ru/ifmo/ctddev/gmwcs/solver/SolverException.class
 ru/ifmo/ctddev/gmwcs/graph/flow/MaxFlow.class
 ru/ifmo/ctddev/gmwcs/Main.class
 ru/ifmo/ctddev/gmwcs/graph/Graph.class
-ru/ifmo/ctddev/gmwcs/graph/Graph$Link.class
 ru/ifmo/ctddev/gmwcs/graph/Graph$RemovingIterator.class
+ru/ifmo/ctddev/gmwcs/graph/Graph$Link.class
 ru/ifmo/ctddev/gmwcs/graph/SimpleIO.class
