@@ -1,5 +1,5 @@
-Preprocessing deleted 64 nodes and 6656 edges.
-Graph decomposing takes 0.005 seconds.
+Preprocessing deleted 83 nodes and 3429 edges.
+Graph decomposing takes 0.003 seconds.
 Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de
 CPXPARAM_Threads                                 1
 CPXPARAM_Parallel                                -1
@@ -36,19 +36,22 @@ CPXPARAM_Threads                                 1
 CPXPARAM_Parallel                                -1
 CPXPARAM_MIP_OrderType                           3
 Generated priority order by increasing cost per coefficient count.
-Found incumbent of value 0,000000 after 0,00 sec. (0,07 ticks)
+Found incumbent of value 0,000000 after 0,00 sec. (0,00 ticks)
+Tried aggregator 2 times.
+MIP Presolve eliminated 4 rows and 2 columns.
+Aggregator did 2 substitutions.
+All rows and columns eliminated.
+Presolve time = 0,00 sec. (0,01 ticks)
 
 Root node processing (before b&c):
-  Real time             =    0,00 sec. (0,09 ticks)
+  Real time             =    0,00 sec. (0,01 ticks)
 Sequential b&c:
   Real time             =    0,00 sec. (0,00 ticks)
                           ------------
-Total (root+branch&cut) =    0,00 sec. (0,09 ticks)
+Total (root+branch&cut) =    0,00 sec. (0,01 ticks)
 Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de
 CPXPARAM_Threads                                 1
 CPXPARAM_Parallel                                -1
 CPXPARAM_MIP_OrderType                           3
-Tried aggregator 1 time.
-LP Presolve eliminated 3 rows and 1 columns.
-All rows and columns eliminated.
+Infeasibility row 'c2':  0 >= 238,295.
 Presolve time = 0,00 sec. (0,00 ticks)
