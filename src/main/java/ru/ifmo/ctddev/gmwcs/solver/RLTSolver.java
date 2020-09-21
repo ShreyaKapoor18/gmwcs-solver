@@ -29,11 +29,12 @@ public class RLTSolver implements RootedSolver {
     private int maxToAddCuts;
     private int considerCuts;
 
-    public RLTSolver() {
+    public RLTSolver(int max_num_nodes) {
         tl = new TimeLimit(Double.POSITIVE_INFINITY);
         threads = 1;
         this.minimum = -Double.MAX_VALUE;
         maxToAddCuts = considerCuts = Integer.MAX_VALUE;
+        int max_num_nodes = max_num_nodes;
     }
 
     public void setMaxToAddCuts(int num) {
@@ -67,7 +68,7 @@ public class RLTSolver implements RootedSolver {
             initVariables();
             addConstraints();
             addObjective();
-            maxSizeConstraints();
+            maxSizeConstraints(max_num_nodes);
             long timeBefore = System.currentTimeMillis();
             if (root == null) {
                 breakRootSymmetry();
@@ -267,20 +268,20 @@ public class RLTSolver implements RootedSolver {
         cplex.addLe(cplex.sum(d.get(to), cplex.prod(n - 1, z)), cplex.sum(d.get(from), n));
     }
 
-    private void maxSizeConstraints() throws IloException {
-        //int count = 0
+    private void maxSizeConstraints(double max_num_nodes) throws IloException {
+         count = 0;
         for (Node v : graph.vertexSet()) {
             for (Node u : graph.neighborListOf(v)) {
                 if (u.getWeight() >= 0) {
                     Edge e = graph.getEdge(v, u);
                     if (e != null && e.getWeight() >= 0) {
                         cplex.addLe(y.get(v), w.get(e));
-                        //count += y.get(v)
+                        cplex.add(y.get(v);
                     }
                 }
             }
         }
-        //cplex.addLe(max_num_nodes,count); now we have to see that how can we implement max_num_nodes constraint
+        cplex.addLe(count); //now we have to see that how can we implement max_num_nodes constraint
     }
 
     private void otherConstraints() throws IloException {

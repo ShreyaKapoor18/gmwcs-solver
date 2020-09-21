@@ -24,7 +24,8 @@ public class Main {
         OptionSet optionSet = optionParser.parse(args);
         optionParser.acceptsAll(asList("n", "nodes"), "Node list file").withRequiredArg().required();
         optionParser.acceptsAll(asList("e", "edges"), "Edge list file").withRequiredArg().required();
-        //optionsParser.accepts("num").withOptionalArg().ofType(Integer.class);
+        optionParser.acceptsAll(asList("nm", "number"), "Preserved Nodes").withRequiredArg()
+                .ofType(Integer.class).defaultsTo(10);
         optionParser.accepts("root", "Root node").withRequiredArg();
         optionParser.acceptsAll(asList("m", "threads"), "Number of threads").withRequiredArg()
                 .ofType(Integer.class).defaultsTo(1);
@@ -79,11 +80,12 @@ public class Main {
         TimeLimit tl = new TimeLimit(timelimit <= 0 ? Double.POSITIVE_INFINITY : timelimit);
         double rsh = (Double) optionSet.valueOf("r");
         double ush = (Double) optionSet.valueOf("u");
+        int max_num_nodes = (Integer) optionSet.valueOf("nm");
         TimeLimit biggestTL = tl.subLimit(1.0 - ush);
         int threadsNum = (Integer) optionSet.valueOf("threads");
         File nodeFile = new File((String) optionSet.valueOf("nodes"));
         File edgeFile = new File((String) optionSet.valueOf("edges"));
-        RLTSolver rltSolver = new RLTSolver(); // first entry point for the solver
+        RLTSolver rltSolver = new RLTSolver(max_num_nodes); // first entry point for the solver
         rltSolver.setThreadsNum(threadsNum);
         Solver solver = null;
         if (!optionSet.has("root")) {
@@ -108,7 +110,7 @@ public class Main {
                 }
                 rltSolver.setRoot(root);
             }
-            List<Unit> units = solver.solve(graph);
+            List<Unit> units = solver.solve(graph); // if no root options then BiComponent, if rooted then rltsolver
             graphIO.write(units);
         } catch (ParseException e) {
             System.err.println("Couldn't parse input files: " + e.getMessage() + " " + e.getErrorOffset());
