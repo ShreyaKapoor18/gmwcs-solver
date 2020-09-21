@@ -268,16 +268,19 @@ public class RLTSolver implements RootedSolver {
     }
 
     private void maxSizeConstraints() throws IloException {
+        //int count = 0
         for (Node v : graph.vertexSet()) {
             for (Node u : graph.neighborListOf(v)) {
                 if (u.getWeight() >= 0) {
                     Edge e = graph.getEdge(v, u);
                     if (e != null && e.getWeight() >= 0) {
                         cplex.addLe(y.get(v), w.get(e));
+                        //count += y.get(v)
                     }
                 }
             }
         }
+        //cplex.addLe(max_num_nodes,count); now we have to see that how can we implement max_num_nodes constraint
     }
 
     private void otherConstraints() throws IloException {

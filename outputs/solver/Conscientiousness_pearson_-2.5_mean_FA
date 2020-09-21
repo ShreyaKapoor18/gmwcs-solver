@@ -1,0 +1,86 @@
+Preprocessing deleted 0 nodes and 0 edges.
+Graph decomposing takes 0.017 seconds.
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de
+CPXPARAM_Threads                                 1
+CPXPARAM_Parallel                                -1
+CPXPARAM_MIP_OrderType                           3
+Generated priority order by increasing cost per coefficient count.
+Tried aggregator 1 time.
+MIP Presolve eliminated 5 rows and 3 columns.
+Reduced MIP has 0 rows, 0 columns, and 0 nonzeros.
+Reduced MIP has 0 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,00 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 0 rows, 0 columns, and 0 nonzeros.
+Reduced MIP has 0 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,00 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0,00 sec. (0,00 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0     0      integral     0        0,0000        0,0000        0    0,00%                        0             0
+Elapsed time = 0,00 sec. (0,00 ticks, tree = 0,00 MB, solutions = 1)
+
+Root node processing (before b&c):
+  Real time             =    0,00 sec. (0,00 ticks)
+Sequential b&c:
+  Real time             =    0,00 sec. (0,00 ticks)
+                          ------------
+Total (root+branch&cut) =    0,00 sec. (0,00 ticks)
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de
+CPXPARAM_Threads                                 1
+CPXPARAM_Parallel                                -1
+CPXPARAM_MIP_OrderType                           3
+Generated priority order by increasing cost per coefficient count.
+Found incumbent of value 0,000000 after 0,00 sec. (0,61 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 31116 rows, 10540 columns, and 96769 nonzeros.
+Reduced MIP has 10455 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,06 sec. (69,30 ticks)
+Probing time = 0,02 sec. (9,03 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+Reduced MIP has 31116 rows, 10540 columns, and 96769 nonzeros.
+Reduced MIP has 10455 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,09 sec. (82,55 ticks)
+Probing fixed 94 vars, tightened 0 bounds.
+Probing time = 0,20 sec. (146,73 ticks)
+Clique table members: 55820.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0,12 sec. (167,90 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                            0,0000      238,2950              --- 
+      0     0       28,2950   166        0,0000       28,2950     3340     --- 
+      0     0       28,2950   166        0,0000     Cuts: 167     3590     --- 
+      0     0       28,2950   166        0,0000     Cuts: 248     3831     --- 
+Detecting symmetries...
+      0     2       28,2950   188        0,0000       28,2950     3831     --- 
+Elapsed time = 3,29 sec. (3946,20 ticks, tree = 0,01 MB, solutions = 1)
+      4     6       28,2268   295        0,0000       28,2950     4964     --- 
+     20    22       28,2197   151        0,0000       28,2950     5233     --- 
+     40    42       28,2915   136        0,0000       28,2950     5598     --- 
+     55    57       28,2204   148        0,0000       28,2950     5943     --- 
+     65    67       28,2196   152        0,0000       28,2950     6142     --- 
+     80    82       28,2915   136        0,0000       28,2950     6420     --- 
+     86    88       28,0879   134        0,0000       28,2950     7055     --- 
+     99   101       27,7099   428        0,0000       28,2950     8884     --- 
+    112   114       28,2204   153        0,0000       28,2950    10197     --- 
+    154   156       28,0350   234        0,0000       28,2950    15262     --- 
+Elapsed time = 6,19 sec. (7668,56 ticks, tree = 5,04 MB, solutions = 1)
+    204   204       28,2196   150        0,0000       28,2950    20006     --- 
+    250   250       27,9203   228        0,0000       28,2950    23939     --- 
+    298   298       27,5855   311        0,0000       28,2950    28774     --- 
+    323   323       27,9176   226        0,0000       28,2950    32116     --- 
+    358   358       27,5803   305        0,0000       28,2950    37400     --- 
+    389   389       27,4508   219        0,0000       28,2950    41933     --- 
+    448   448       27,4491   219        0,0000       28,2950    42656     --- 
+    515   515       27,4508   219        0,0000       28,2950    43954     --- 

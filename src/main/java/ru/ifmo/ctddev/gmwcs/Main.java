@@ -24,6 +24,7 @@ public class Main {
         OptionSet optionSet = optionParser.parse(args);
         optionParser.acceptsAll(asList("n", "nodes"), "Node list file").withRequiredArg().required();
         optionParser.acceptsAll(asList("e", "edges"), "Edge list file").withRequiredArg().required();
+        //optionsParser.accepts("num").withOptionalArg().ofType(Integer.class);
         optionParser.accepts("root", "Root node").withRequiredArg();
         optionParser.acceptsAll(asList("m", "threads"), "Number of threads").withRequiredArg()
                 .ofType(Integer.class).defaultsTo(1);
@@ -33,6 +34,7 @@ public class Main {
                 .withRequiredArg().ofType(Double.class).defaultsTo(0.3);
         optionParser.acceptsAll(asList("r", "rooted"), "Maximum share of time allocated for solving rooted parts")
                 .withRequiredArg().ofType(Double.class).defaultsTo(0.3);
+        // add option for the max number of nodes here
         if (optionSet.has("h")) {
             optionParser.printHelpOn(System.out);
             return null;
@@ -81,7 +83,7 @@ public class Main {
         int threadsNum = (Integer) optionSet.valueOf("threads");
         File nodeFile = new File((String) optionSet.valueOf("nodes"));
         File edgeFile = new File((String) optionSet.valueOf("edges"));
-        RLTSolver rltSolver = new RLTSolver();
+        RLTSolver rltSolver = new RLTSolver(); // first entry point for the solver
         rltSolver.setThreadsNum(threadsNum);
         Solver solver = null;
         if (!optionSet.has("root")) {
