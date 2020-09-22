@@ -31,9 +31,9 @@ public class GMWCSTest {
     private ReferenceSolver referenceSolver;
     private Random random;
 
-    public GMWCSTest() {
+    public GMWCSTest(double max_num_nodes) {
         random = new Random(SEED);
-        this.solver = new BicomponentSolver(new RLTSolver());
+        this.solver = new BicomponentSolver(new RLTSolver(max_num_nodes));
         tests = new ArrayList<>();
         referenceSolver = new ReferenceSolver();
         if (System.getProperty("skipTests") != null) {

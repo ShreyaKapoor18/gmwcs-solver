@@ -28,13 +28,14 @@ public class RLTSolver implements RootedSolver {
     private boolean isSolvedToOptimality;
     private int maxToAddCuts;
     private int considerCuts;
+    public double max_num_nodes;
 
-    public RLTSolver(int max_num_nodes) {
+    public RLTSolver(double max_num_nodes) {
         tl = new TimeLimit(Double.POSITIVE_INFINITY);
         threads = 1;
         this.minimum = -Double.MAX_VALUE;
         maxToAddCuts = considerCuts = Integer.MAX_VALUE;
-        int max_num_nodes = max_num_nodes;
+        this.max_num_nodes = max_num_nodes;
     }
 
     public void setMaxToAddCuts(int num) {
@@ -68,7 +69,7 @@ public class RLTSolver implements RootedSolver {
             initVariables();
             addConstraints();
             addObjective();
-            maxSizeConstraints(max_num_nodes);
+            maxSizeConstraints(this.max_num_nodes);
             long timeBefore = System.currentTimeMillis();
             if (root == null) {
                 breakRootSymmetry();
@@ -269,19 +270,17 @@ public class RLTSolver implements RootedSolver {
     }
 
     private void maxSizeConstraints(double max_num_nodes) throws IloException {
-         count = 0;
+
         for (Node v : graph.vertexSet()) {
-            for (Node u : graph.neighborListOf(v)) {
+            for (Node u : graph.neighborListOf(v)){
                 if (u.getWeight() >= 0) {
                     Edge e = graph.getEdge(v, u);
                     if (e != null && e.getWeight() >= 0) {
                         cplex.addLe(y.get(v), w.get(e));
-                        cplex.add(y.get(v);
                     }
                 }
             }
         }
-        cplex.addLe(count); //now we have to see that how can we implement max_num_nodes constraint
     }
 
     private void otherConstraints() throws IloException {
@@ -303,6 +302,8 @@ public class RLTSolver implements RootedSolver {
             cplex.addEq(x0.get(root), 1);
         }
         // (32)
+        System.out.println("sum constraints");
+        cplex.addLe(cplex.sum(graph.vertexSet().stream().map(v -> y.get(v)).toArray(IloNumVar[]::new)), this.max_num_nodes);
         for (Node node : graph.vertexSet()) {
             Set<Edge> edges = graph.edgesOf(node);
             IloNumVar xSum[] = new IloNumVar[edges.size() + 1];
@@ -313,6 +314,7 @@ public class RLTSolver implements RootedSolver {
             xSum[xSum.length - 1] = x0.get(node);
             cplex.addEq(cplex.sum(xSum), y.get(node));
         }
+
     }
 
     private IloNumVar getX(Edge e, Node to) {

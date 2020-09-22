@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public abstract class Unit implements Comparable<Unit> {
-    protected int num;
+    public int num;
     protected double weight;
     protected List<Unit> absorbed;
 
