@@ -28,9 +28,9 @@ public class Main {
                 .ofType(Double.class).defaultsTo(10.0);
         optionParser.accepts("root", "Root node").withRequiredArg();
         optionParser.acceptsAll(asList("m", "threads"), "Number of threads").withRequiredArg()
-                .ofType(Integer.class).defaultsTo(1);
+                .ofType(Integer.class).defaultsTo(6);
         optionParser.acceptsAll(asList("t", "timelimit"), "Timelimit in seconds (<= 0 - unlimited)")
-                .withRequiredArg().ofType(Long.class).defaultsTo(0L);
+                .withRequiredArg().ofType(Long.class).defaultsTo(1000L);
         optionParser.acceptsAll(asList("u", "unrooted"), "Maximum share of time allocated for solving unrooted parts")
                 .withRequiredArg().ofType(Double.class).defaultsTo(0.3);
         optionParser.acceptsAll(asList("r", "rooted"), "Maximum share of time allocated for solving rooted parts")
@@ -110,6 +110,7 @@ public class Main {
                 }
                 rltSolver.setRoot(root);
             }
+            System.out.println("solver part being executed in the main program");
             List<Unit> units = solver.solve(graph); // if no root options then BiComponent, if rooted then rltsolver
             graphIO.write(units);
         } catch (ParseException e) {

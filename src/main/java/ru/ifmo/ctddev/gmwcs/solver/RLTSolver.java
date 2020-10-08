@@ -66,10 +66,12 @@ public class RLTSolver implements RootedSolver {
         try {
             cplex = new IloCplex();
             this.graph = graph;
+            System.out.println("Starting to add constraints");
             initVariables();
             addConstraints();
             addObjective();
-            maxSizeConstraints(this.max_num_nodes);
+            System.out.println("trying to add the maxsize constraints");
+            maxSizeConstraints();
             long timeBefore = System.currentTimeMillis();
             if (root == null) {
                 breakRootSymmetry();
@@ -269,8 +271,7 @@ public class RLTSolver implements RootedSolver {
         cplex.addLe(cplex.sum(d.get(to), cplex.prod(n - 1, z)), cplex.sum(d.get(from), n));
     }
 
-    private void maxSizeConstraints(double max_num_nodes) throws IloException {
-
+    private void maxSizeConstraints() throws IloException {
         for (Node v : graph.vertexSet()) {
             for (Node u : graph.neighborListOf(v)){
                 if (u.getWeight() >= 0) {
@@ -302,7 +303,11 @@ public class RLTSolver implements RootedSolver {
             cplex.addEq(x0.get(root), 1);
         }
         // (32)
+        System.out.println("y values for the presence of the node in the subgraph");
+        System.out.println(y);
         System.out.println("sum constraints");
+
+        System.out.println(cplex.sum(graph.vertexSet().stream().map(v -> y.get(v)).toArray(IloNumVar[]::new)));
         cplex.addLe(cplex.sum(graph.vertexSet().stream().map(v -> y.get(v)).toArray(IloNumVar[]::new)), this.max_num_nodes);
         for (Node node : graph.vertexSet()) {
             Set<Edge> edges = graph.edgesOf(node);

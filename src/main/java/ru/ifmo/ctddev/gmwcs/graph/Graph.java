@@ -154,7 +154,7 @@ public class Graph {
 
     public Graph subgraph(Set<Node> nodes, Set<Edge> edges) {
         Graph res = new Graph();
-        nodes.stream().forEach(res::addVertex);
+        nodes.stream().forEach(res::addVertex); // what is this residual part?
         for (Edge e : edges) {
             if (containsEdge(e)) {
                 res.addEdge(getEdgeSource(e), getEdgeTarget(e), e);
