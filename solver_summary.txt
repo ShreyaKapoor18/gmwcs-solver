@@ -1,0 +1,96 @@
+****************************************************************************************************
+Case:feature_type, target,edge, Node weights, Num_nodes, Thresh
+Case:mean_FA,Gender,t_test,const, 5,0
+Input graph
+ Nodes: 84
+ Edges:1069
+ Edges description:DescribeResult(nobs=1069, minmax=(0.016, 13.077), mean=3.9734742750233867, variance=5.355518367549217, skewness=0.6681050971278885, kurtosis=0.11040393618414734)
+ Nodes description:DescribeResult(nobs=84, minmax=(-0.01, -0.01), mean=-0.01, variance=0.0, skewness=0.0, kurtosis=-3.0)
+
+Output graph
+ Nodes: 5
+ Edges:10
+ Edges description:DescribeResult(nobs=10, minmax=(5.761, 13.077), mean=9.449700000000002, variance=4.374594677777777, skewness=0.06514508167188883, kurtosis=-0.4517673475917925)
+ Nodes description:DescribeResult(nobs=5, minmax=(-0.01, -0.01), mean=-0.01, variance=0.0, skewness=0.0, kurtosis=-3.0)
+
+Percentage of features preserved 0.935
+****************************************************************************************************
+Case:feature_type, target,edge, Node weights, Num_nodes, Thresh
+Case:mean_FA,Gender,t_test,const, 10,0
+Input graph
+ Nodes: 84
+ Edges:1069
+ Edges description:DescribeResult(nobs=1069, minmax=(0.016, 13.077), mean=3.9734742750233867, variance=5.355518367549217, skewness=0.6681050971278885, kurtosis=0.11040393618414734)
+ Nodes description:DescribeResult(nobs=84, minmax=(-0.01, -0.01), mean=-0.01, variance=0.0, skewness=0.0, kurtosis=-3.0)
+
+Output graph
+ Nodes: 10
+ Edges:45
+ Edges description:DescribeResult(nobs=45, minmax=(2.261, 13.077), mean=7.464711111111112, variance=5.494311073737372, skewness=-0.03286781305257982, kurtosis=-0.040369381185588527)
+ Nodes description:DescribeResult(nobs=10, minmax=(-0.01, -0.01), mean=-0.009999999999999998, variance=3.3436283756722846e-36, skewness=-1.0, kurtosis=-2.0)
+
+Percentage of features preserved 4.21
+****************************************************************************************************
+Case:feature_type, target,edge, Node weights, Num_nodes, Thresh
+Case:mean_FA,Gender,t_test,const, 15,0
+Input graph
+ Nodes: 84
+ Edges:1069
+ Edges description:DescribeResult(nobs=1069, minmax=(0.016, 13.077), mean=3.9734742750233867, variance=5.355518367549217, skewness=0.6681050971278885, kurtosis=0.11040393618414734)
+ Nodes description:DescribeResult(nobs=84, minmax=(-0.01, -0.01), mean=-0.01, variance=0.0, skewness=0.0, kurtosis=-3.0)
+
+Output graph
+ Nodes: 15
+ Edges:102
+ Edges description:DescribeResult(nobs=102, minmax=(2.261, 13.077), mean=6.731049019607842, variance=5.173840938167347, skewness=0.26122457536985705, kurtosis=-0.28830846839416147)
+ Nodes description:DescribeResult(nobs=15, minmax=(-0.01, -0.01), mean=-0.01, variance=0.0, skewness=0.0, kurtosis=-3.0)
+
+Percentage of features preserved 9.542
+****************************************************************************************************
+Case:feature_type, target,edge, Node weights, Num_nodes, Thresh
+Case:mean_FA,Gender,t_test,const, 20,0
+Input graph
+ Nodes: 84
+ Edges:1069
+ Edges description:DescribeResult(nobs=1069, minmax=(0.016, 13.077), mean=3.9734742750233867, variance=5.355518367549217, skewness=0.6681050971278885, kurtosis=0.11040393618414734)
+ Nodes description:DescribeResult(nobs=84, minmax=(-0.01, -0.01), mean=-0.01, variance=0.0, skewness=0.0, kurtosis=-3.0)
+
+Output graph
+ Nodes: 20
+ Edges:176
+ Edges description:DescribeResult(nobs=176, minmax=(1.042, 13.077), mean=6.004551136363636, variance=5.39299399737013, skewness=0.21254878370309957, kurtosis=-0.13219573031230336)
+ Nodes description:DescribeResult(nobs=20, minmax=(-0.01, -0.01), mean=-0.010000000000000002, variance=3.167647934847427e-36, skewness=1.0, kurtosis=-2.0)
+
+Percentage of features preserved 16.464
+****************************************************************************************************
+Case:feature_type, target,edge, Node weights, Num_nodes, Thresh
+Case:mean_FA,Gender,t_test,const, 25,0
+Input graph
+ Nodes: 84
+ Edges:1069
+ Edges description:DescribeResult(nobs=1069, minmax=(0.016, 13.077), mean=3.9734742750233867, variance=5.355518367549217, skewness=0.6681050971278885, kurtosis=0.11040393618414734)
+ Nodes description:DescribeResult(nobs=84, minmax=(-0.01, -0.01), mean=-0.01, variance=0.0, skewness=0.0, kurtosis=-3.0)
+
+Output graph
+ Nodes: 25
+ Edges:231
+ Edges description:DescribeResult(nobs=231, minmax=(1.042, 13.077), mean=6.019199134199134, variance=5.464520873216638, skewness=0.23930399219874632, kurtosis=-0.30957581011392676)
+ Nodes description:DescribeResult(nobs=25, minmax=(-0.01, -0.01), mean=-0.01, variance=0.0, skewness=0.0, kurtosis=-3.0)
+
+Percentage of features preserved 21.609
+****************************************************************************************************
+Case:feature_type, target,edge, Node weights, Num_nodes, Thresh
+Case:mean_FA,Gender,t_test,const, 30,0
+Input graph
+ Nodes: 84
+ Edges:1069
+ Edges description:DescribeResult(nobs=1069, minmax=(0.016, 13.077), mean=3.9734742750233867, variance=5.355518367549217, skewness=0.6681050971278885, kurtosis=0.11040393618414734)
+ Nodes description:DescribeResult(nobs=84, minmax=(-0.01, -0.01), mean=-0.01, variance=0.0, skewness=0.0, kurtosis=-3.0)
+
+Output graph
+ Nodes: 30
+ Edges:305
+ Edges description:DescribeResult(nobs=305, minmax=(1.042, 13.077), mean=5.745455737704918, variance=5.124938913330458, skewness=0.3078000140096483, kurtosis=-0.15689364126415928)
+ Nodes description:DescribeResult(nobs=30, minmax=(-0.01, -0.01), mean=-0.010000000000000002, variance=3.1130333152810926e-36, skewness=1.0, kurtosis=-2.0)
+
+Percentage of features preserved 28.531
