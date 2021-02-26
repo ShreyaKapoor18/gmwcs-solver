@@ -1,0 +1,312 @@
+solver part being executed in the main program
+solve method of bicomponent solver
+Graph decomposing takes 0.008 seconds.
+decomposed part of the graphru.ifmo.ctddev.gmwcs.graph.Decomposition@4459eb14
+solve biggest
+root vertex addedN(-1, 0.0)
+trying to solve tree with the rooted part
+solving with the time limit on the graph
+Trying to use the solve method
+Starting to add constraints
+y values for the presence of the node in the subgraph
+{N(-1, 0.0)=y0}
+sum constraints
+y0
+trying to add the maxsize constraints
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de
+CPXPARAM_Threads                                 6
+CPXPARAM_Parallel                                -1
+CPXPARAM_MIP_OrderType                           3
+CPXPARAM_TimeLimit                               300
+Generated priority order by increasing cost per coefficient count.
+Tried aggregator 1 time.
+MIP Presolve eliminated 6 rows and 3 columns.
+Reduced MIP has 0 rows, 0 columns, and 0 nonzeros.
+Reduced MIP has 0 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,00 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 0 rows, 0 columns, and 0 nonzeros.
+Reduced MIP has 0 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,00 sec. (0,00 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: traditional branch-and-cut.
+Parallel mode: opportunistic, using up to 6 threads.
+Root relaxation solution time = 0,00 sec. (0,00 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap         Variable B NodeID Parent  Depth
+
+*     0     0      integral     0        0,0000        0,0000        0    0,00%                        0             0
+Elapsed time = 0,00 sec. (0,00 ticks, tree = 0,00 MB, solutions = 1)
+
+Root node processing (before b&c):
+  Real time             =    0,00 sec. (0,00 ticks)
+Parallel b&c, 6 threads:
+  Real time             =    0,00 sec. (0,00 ticks)
+  Sync time (average)   =    0,00 sec.
+  Wait time (average)   =    0,00 sec.
+                          ------------
+Total (root+branch&cut) =    0,00 sec. (0,00 ticks)
+solve for the main vs biggest
+main:ru.ifmo.ctddev.gmwcs.graph.Graph@6b71769e
+biggestru.ifmo.ctddev.gmwcs.TimeLimit@2752f6e2
+solving with the time limit on the graph
+Trying to use the solve method
+Starting to add constraints
+y values for the presence of the node in the subgraph
+{N(43, -0.01)=y44, N(84, -0.01)=y85, N(78, -0.01)=y79, N(81, -0.01)=y82, N(79, -0.01)=y80, N(82, -0.01)=y83, N(83, -0.01)=y84, N(80, -0.01)=y81, N(62, -0.01)=y63, N(74, -0.01)=y75, N(71, -0.01)=y72, N(77, -0.01)=y78, N(63, -0.01)=y64, N(75, -0.01)=y76, N(68, -0.01)=y69, N(72, -0.01)=y73, N(70, -0.01)=y71, N(65, -0.01)=y66, N(73, -0.01)=y74, N(69, -0.01)=y70, N(64, -0.01)=y65, N(61, -0.01)=y62, N(59, -0.01)=y60, N(53, -0.01)=y54, N(58, -0.01)=y59, N(51, -0.01)=y52, N(49, -0.01)=y50, N(60, -0.01)=y61, N(67, -0.01)=y68, N(66, -0.01)=y67, N(52, -0.01)=y53, N(57, -0.01)=y58, N(50, -0.01)=y51, N(56, -0.01)=y57, N(55, -0.01)=y56, N(54, -0.01)=y55, N(47, -0.01)=y48, N(48, -0.01)=y49, N(45, -0.01)=y46, N(76, -0.01)=y77, N(38, -0.01)=y39, N(41, -0.01)=y42, N(42, -0.01)=y43, N(44, -0.01)=y45, N(46, -0.01)=y47, N(35, -0.01)=y36, N(39, -0.01)=y40, N(40, -0.01)=y41, N(32, -0.01)=y33, N(36, -0.01)=y37, N(37, -0.01)=y38, N(31, -0.01)=y32, N(34, -0.01)=y35, N(33, -0.01)=y34, N(30, -0.01)=y31, N(29, -0.01)=y30, N(28, -0.01)=y29, N(27, -0.01)=y28, N(19, -0.01)=y20, N(18, -0.01)=y19, N(26, -0.01)=y27, N(25, -0.01)=y26, N(22, -0.01)=y23, N(23, -0.01)=y24, N(21, -0.01)=y22, N(16, -0.01)=y17, N(24, -0.01)=y25, N(20, -0.01)=y21, N(15, -0.01)=y16, N(10, -0.01)=y11, N(14, -0.01)=y15, N(17, -0.01)=y18, N(11, -0.01)=y12, N(13, -0.01)=y14, N(2, -0.01)=y3, N(9, -0.01)=y10, N(4, -0.01)=y5, N(12, -0.01)=y13, N(5, -0.01)=y6, N(6, -0.01)=y7, N(8, -0.01)=y9, N(3, -0.01)=y4, N(7, -0.01)=y8, N(1, -0.01)=y2}
+sum constraints
+(y44 + y85 + y79 + y82 + y80 + y83 + y84 + y81 + y63 + y75 + y72 + y78 + y64 + y76 + y69 + y73 + y71 + y66 + y74 + y70 + y65 + y62 + y60 + y54 + y59 + y52 + y50 + y61 + y68 + y67 + y53 + y58 + y51 + y57 + y56 + y55 + y48 + y49 + y46 + y77 + y39 + y42 + y43 + y45 + y47 + y36 + y40 + y41 + y33 + y37 + y38 + y32 + y35 + y34 + y31 + y30 + y29 + y28 + y20 + y19 + y27 + y26 + y23 + y24 + y22 + y17 + y25 + y21 + y16 + y11 + y15 + y18 + y12 + y14 + y3 + y10 + y5 + y13 + y6 + y7 + y9 + y4 + y2 + y8)
+trying to add the maxsize constraints
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de
+CPXPARAM_Threads                                 6
+CPXPARAM_Parallel                                -1
+CPXPARAM_MIP_OrderType                           3
+CPXPARAM_TimeLimit                               699.98800000000006
+Generated priority order by increasing cost per coefficient count.
+Found incumbent of value 0,000000 after 0,00 sec. (0,12 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 5728 rows, 2077 columns, and 17865 nonzeros.
+Reduced MIP has 1992 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,01 sec. (9,45 ticks)
+Probing fixed 5 vars, tightened 0 bounds.
+Probing time = 0,07 sec. (10,66 ticks)
+Tried aggregator 1 time.
+Detecting symmetries...
+MIP Presolve eliminated 5 rows and 5 columns.
+Reduced MIP has 5723 rows, 2072 columns, and 17840 nonzeros.
+Reduced MIP has 1987 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,01 sec. (11,74 ticks)
+Probing fixed 5 vars, tightened 0 bounds.
+Probing time = 0,06 sec. (13,16 ticks)
+Clique table members: 9671.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: opportunistic, using up to 6 threads.
+Root relaxation solution time = 0,13 sec. (44,05 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                            0,0000       47,5200              --- 
+      0     0       18,1812   481        0,0000       18,1812     1000     --- 
+*     0+    0                            6,6830       18,1812           172,05%
+      0     0       18,1311   481        6,6830      Cuts: 54     1135  171,30%
+      0     0       18,0929   481        6,6830     Cuts: 258     1260  170,73%
+      0     0       18,0929   481        6,6830      Cuts: 79     1369  170,73%
+*     0+    0                            9,7700       18,0929            85,19%
+      0     0       18,0929   481        9,7700      Cuts: 49     1500   83,36%
+*     0+    0                           11,0280       17,9141            62,44%
+*     0+    0                           11,4510       17,9141            56,44%
+      0     0        cutoff             11,4510       17,9141     1501   56,44%
+Detecting symmetries...
+      0     2       18,0929   481       11,4510       17,9141     1501   56,44%
+Elapsed time = 0,86 sec. (640,29 ticks, tree = 0,02 MB, solutions = 5)
+*     7+    5                           11,7180       17,9141            52,88%
+*    11+    4                           13,0290       17,9141            37,49%
+    301   175       16,4345    47       13,0290       17,8463     5197   36,97%
+    929   603       16,4464    51       13,0290       17,8463    11811   36,97%
+*  1452+  896                           13,2730       17,8463            34,46%
+   1547  1057       15,1386   118       13,2730       17,7975    16116   34,09%
+
+Performing restart 1
+
+Repeating presolve.
+Tried aggregator 1 time.
+MIP Presolve eliminated 15 rows and 10 columns.
+Reduced MIP has 5708 rows, 2062 columns, and 17778 nonzeros.
+Reduced MIP has 1977 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,01 sec. (9,48 ticks)
+Tried aggregator 1 time.
+MIP Presolve modified 22 coefficients.
+Reduced MIP has 5708 rows, 2062 columns, and 17778 nonzeros.
+Reduced MIP has 1977 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,01 sec. (11,82 ticks)
+Represolve time = 0,09 sec. (38,85 ticks)
+   1752     0       18,0105   478       13,2730      Cuts: 75    25192   34,09%
+   1752     0       17,9692   478       13,2730      Cuts: 52    25318   34,09%
+   1752     0       17,9490   478       13,2730      Cuts: 54    25417   34,09%
+   1752     0       17,9240   478       13,2730      Cuts: 77    25576   34,09%
+   1752     0       17,8970   478       13,2730      Cuts: 53    25713   34,09%
+   1752     0       17,8528   478       13,2730      Cuts: 65    25864   34,09%
+   1752     0       17,8377   478       13,2730      Cuts: 32    25952   30,98%
+   1752     0       17,8344   478       13,2730      Cuts: 32    26070   30,98%
+*  1752+    0                           14,0950       17,3849            23,34%
+   1752     0        cutoff             14,0950       17,3849    26070   23,34%
+   1752     0       17,8071   478       14,0950      Cuts: 29    26174   23,34%
+   1752     0       17,7778   478       14,0950      Cuts: 35    26311   23,34%
+   1752     0       17,7764   478       14,0950      Cuts: 21    26408   23,34%
+*  1752+    0                           14,2840       17,3849            21,71%
+   1752     0       17,7764   478       14,2840      Cuts: 12    26428   19,78%
+   1752     0       17,7764   478       14,2840    MIRcuts: 6    26458   19,78%
+*  1752+    0                           16,3040       17,1087             4,94%
+   1752     0       17,7764   478       16,3040      Cuts: 17    26483    4,72%
+*  1752+    0                           16,3850       17,0738             4,20%
+   1752     0        cutoff             16,3850       17,0738    26483    4,20%
+   1752     2       17,7764   492       16,3850       17,0738    26483    4,20%
+   1786    15       16,8614   434       16,3850       17,0738    27928    4,20%
+   1832    32       17,1979   507       16,3850       17,0738    28890    4,20%
+   1900    67       16,8614   433       16,3850       17,0738    31274    4,20%
+   2023   228       16,6955   343       16,3850       17,0738    39055    4,20%
+   2118   247       16,9448   402       16,3850       17,0738    40456    4,20%
+   2786   880       16,9583   369       16,3850       17,0738    67437    4,20%
+Elapsed time = 7,38 sec. (7344,43 ticks, tree = 1,27 MB, solutions = 16)
+   3972  1625       17,0210   105       16,3850       17,0738    86990    4,20%
+   5283  2732       17,2840   430       16,3850       17,0738   110637    4,20%
+   6999  3894       17,3658   479       16,7970       17,0738   131710    1,65%
+*  7915+ 4250                           16,8150       17,0738             1,54%
+   9138  5284       17,0772    88       16,8400       17,0738   175145    1,39%
+  11462  6402       16,9839    42       16,8400       17,0738   185751    1,39%
+  13887  8901       16,9764   290       16,9440       17,0738   206451    0,77%
+  16888  8411        cutoff             16,9440       17,0738   224119    0,77%
+* 18761+ 9175                           16,9700       17,0738             0,61%
+  19641 10333       16,9550   159       16,9700       17,0738   244587    0,61%
+  22844 11615       17,0300    32       16,9700       17,0738   271442    0,61%
+  25846 13272       17,0396    74       16,9700       17,0738   288082    0,61%
+Elapsed time = 13,96 sec. (16885,33 ticks, tree = 23,50 MB, solutions = 28)
+  29057 16992       17,0227    78       16,9700       17,0738   314618    0,61%
+  31994 18564       17,0605    80       16,9700       17,0738   326666    0,61%
+  35129 22880       17,0942   168       16,9700       17,0738   361058    0,61%
+  38627 24036       16,9850    38       16,9700       17,0738   370514    0,61%
+  41967 28772       17,0904   307       16,9700       17,0738   409223    0,61%
+  44705 32784       17,0942   158       16,9700       17,0738   445030    0,61%
+  47837 34268       17,0600    83       16,9700       17,0738   455502    0,61%
+  51438 35052        cutoff             16,9700       17,0738   463404    0,61%
+  54715 38975       17,0174    62       16,9700       17,0738   495755    0,61%
+  57196 42653       17,0526   157       16,9700       17,0738   526485    0,61%
+Elapsed time = 20,31 sec. (26424,89 ticks, tree = 81,26 MB, solutions = 28)
+  59750 44994       17,0287   253       16,9700       17,0738   546427    0,61%
+
+Performing restart 2
+
+Repeating presolve.
+Tried aggregator 1 time.
+MIP Presolve eliminated 2 rows and 14 columns.
+MIP Presolve modified 3 coefficients.
+Reduced MIP has 5706 rows, 2048 columns, and 23970 nonzeros.
+Reduced MIP has 1963 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,04 sec. (16,11 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 5706 rows, 2048 columns, and 23970 nonzeros.
+Reduced MIP has 1963 binaries, 1 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0,02 sec. (14,48 ticks)
+Represolve time = 0,18 sec. (65,96 ticks)
+  60256     0       17,7738   455       16,9700      Cuts: 54   567364    0,61%
+  60256     0       17,7738   455       16,9700      Cuts: 40   567456    0,61%
+  60256     0       17,7738   455       16,9700      Cuts: 44   567564    0,54%
+  60256     0       17,7738   455       16,9700      Cuts: 21   567619    0,45%
+  60256     0       17,7738   455       16,9700      Cuts: 19   567657    0,35%
+  60256     0       17,7738   455       16,9700       Cuts: 7   567688    0,35%
+  60256     0       17,7738   455       16,9700      Cuts: 40   567730    0,35%
+  60256     0       17,7738   455       16,9700      Cuts: 21   567768    0,35%
+  60256     0       17,7738   455       16,9700      Cuts: 38   567805    0,35%
+  60256     5        cutoff             16,9700       17,0300   568940    0,35%
+  60462    91       17,2965   368       16,9700       17,0300   590953    0,35%
+  60897   313       17,0647   337       16,9700       17,0300   603485    0,35%
+  61458   633       17,1160   526       16,9700       17,0300   609545    0,35%
+  62006   766       16,9770    44       16,9700       17,0300   612659    0,35%
+  62653  1370       17,0393   472       16,9700       17,0300   624263    0,35%
+  63384  2129       17,0186   259       16,9700       17,0300   637713    0,35%
+  64270  2193       17,0654   294       16,9700       17,0300   638354    0,35%
+  65266  3072       17,0002   243       16,9700       17,0300   657274    0,35%
+Elapsed time = 34,05 sec. (44142,81 ticks, tree = 9,68 MB, solutions = 28)
+  66428  4981       16,9911   147       16,9700       17,0300   687874    0,35%
+  67701  5118       16,9787   292       16,9700       17,0300   690374    0,35%
+  68819  6007       17,0325   277       16,9700       17,0300   703604    0,35%
+  69971  7136       16,9850    32       16,9700       17,0300   723349    0,35%
+  71322  7547       16,9787   253       16,9700       17,0300   728877    0,35%
+  72587  8970       16,9850    36       16,9700       17,0300   745605    0,35%
+  73905 10322       16,9850    36       16,9700       17,0300   763921    0,35%
+  75319  9912       16,9728   246       16,9700       17,0300   757526    0,35%
+  76741 12003       17,0260    84       16,9700       17,0300   789204    0,35%
+  78040 12221       16,9949   158       16,9700       17,0300   790904    0,35%
+Elapsed time = 41,32 sec. (53688,91 ticks, tree = 28,85 MB, solutions = 28)
+  79228 13522       17,0260    81       16,9700       17,0300   808892    0,35%
+  80565 15024       16,9995   307       16,9700       17,0300   832719    0,35%
+  81824 15562       16,9863   213       16,9700       17,0300   842653    0,35%
+  83211 17143       16,9770    36       16,9700       17,0300   871227    0,35%
+  84640 15909        cutoff             16,9700       17,0300   850518    0,35%
+  86069 19022       16,9778    89       16,9700       17,0300   896513    0,35%
+  87436 20787       16,9770    40       16,9700       17,0300   915598    0,35%
+  88805 21851       16,9770    42       16,9700       17,0300   930269    0,35%
+  89832 20960       16,9770    40       16,9700       17,0300   918524    0,35%
+  90910 21487       17,1293   215       16,9700       17,0300   925511    0,35%
+Elapsed time = 48,47 sec. (63232,89 ticks, tree = 48,72 MB, solutions = 28)
+  92183 22374       16,9770    32       16,9700       17,0300   939230    0,35%
+  93360 24722       16,9827   245       16,9700       17,0300   985494    0,35%
+  94371 23945       16,9770    41       16,9700       17,0300   971769    0,35%
+  95531 25738       16,9849    96       16,9700       17,0300  1008217    0,35%
+  96714 27371       17,0803   297       16,9700       17,0300  1053267    0,35%
+  98018 28207       17,1046   278       16,9700       17,0300  1064737    0,35%
+  99364 29572       17,0279   206       16,9700       17,0300  1087082    0,35%
+ 100873 27509       17,0828   299       16,9700       17,0300  1053038    0,35%
+ 102360 31184       16,9840   255       16,9700       17,0300  1111373    0,35%
+ 103752 31961       17,0380    59       16,9700       17,0300  1121051    0,35%
+Elapsed time = 55,84 sec. (72776,45 ticks, tree = 71,71 MB, solutions = 28)
+ 105134 32475       17,0063   281       16,9700       17,0300  1130151    0,35%
+ 106343 33482       17,0380    59       16,9700       17,0300  1143906    0,35%
+ 107803 34115       16,9849    94       16,9700       17,0300  1155191    0,35%
+ 109037 35886       16,9953   144       16,9700       17,0300  1189686    0,35%
+ 110457 36896       16,9751    39       16,9700       17,0300  1206969    0,35%
+ 112037 36268       16,9953   138       16,9700       17,0300  1195701    0,35%
+ 113638 38940       16,9751    39       16,9700       17,0300  1238654    0,35%
+ 115459 39873       17,0060    61       16,9700       17,0300  1251478    0,35%
+ 117340 41868       16,9886   173       16,9700       17,0300  1270706    0,35%
+ 119001 42552       17,0353   184       16,9700       17,0300  1279943    0,35%
+Elapsed time = 63,27 sec. (82321,11 ticks, tree = 97,54 MB, solutions = 28)
+ 120829 44072       16,9878   263       16,9700       17,0300  1295467    0,35%
+ 122677 46008       17,0067    65       16,9700       17,0300  1317318    0,35%
+ 124450 47184       17,0300    38       16,9700       17,0300  1332012    0,35%
+ 126265 48221       17,0380    61       16,9700       17,0300  1341357    0,35%
+ 128121 51005       17,0294   110       16,9700       17,0300  1369553    0,35%
+ 129817 50992       16,9850    38       16,9700       17,0300  1372120    0,35%
+ 131578 52227       17,0272    57       16,9700       17,0300  1387181    0,35%
+ 133152 53553       16,9781   262       16,9700       17,0300  1405636    0,35%
+ 134813 55708       17,0457    62       16,9700       17,0300  1433636    0,35%
+ 136402 54586       17,0278    36       16,9700       17,0300  1418844    0,35%
+Elapsed time = 70,72 sec. (91864,58 ticks, tree = 125,74 MB, solutions = 28)
+ 138105 58610    infeasible             16,9700       17,0300  1472093    0,35%
+ 139938 58917       17,0230    34       16,9700       17,0300  1474728    0,35%
+ 141880 60985       17,0380    66       16,9700       17,0300  1500195    0,35%
+ 143837 61279       17,0217   100       16,9700       17,0300  1503102    0,35%
+ 145899 64932       17,0429   132       16,9700       17,0300  1540356    0,35%
+ 147868 64972       17,0223    34       16,9700       17,0300  1540313    0,35%
+ 149842 66133       17,0230    42       16,9700       17,0300  1550226    0,35%
+ 151756 67980       16,9850    40       16,9700       17,0300  1567274    0,35%
+ 153568 70689        cutoff             16,9700       17,0300  1595043    0,35%
+ 161146 75668       16,9849    59       16,9700       17,0300  1648831    0,35%
+Elapsed time = 80,55 sec. (104268,29 ticks, tree = 179,29 MB, solutions = 28)
+ 168999 82728       17,0225    36       17,0240       17,0300  1724688    0,04%
+*171754+36657                           17,0300       17,0300             0,00%
+
+GUB cover cuts applied:  1
+Clique cuts applied:  8
+Flow cuts applied:  1
+Mixed integer rounding cuts applied:  32
+Zero-half cuts applied:  55
+Gomory fractional cuts applied:  17
+
+Root node processing (before b&c):
+  Real time             =    0,85 sec. (638,67 ticks)
+Parallel b&c, 6 threads:
+  Real time             =   84,20 sec. (111222,31 ticks)
+  Sync time (average)   =    0,21 sec.
+  Wait time (average)   =    0,01 sec.
+                          ------------
+Total (root+branch&cut) =   85,05 sec. (111860,98 ticks)
+solving with the time limit on the graph
+Trying to use the solve method
+Starting to add constraints
+y values for the presence of the node in the subgraph
+{}
+sum constraints
+0.0
+trying to add the maxsize constraints
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de
+CPXPARAM_Threads                                 6
+CPXPARAM_Parallel                                -1
+CPXPARAM_MIP_OrderType                           3
+CPXPARAM_TimeLimit                               914.92900000000009
+Infeasibility row 'c3':  0 >= 17,03.
+Presolve time = 0,00 sec. (0,00 ticks)
+extract method of bicomponent solver
